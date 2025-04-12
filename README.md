@@ -54,3 +54,4 @@ This project is a portfolio website template showcasing skills, projects, and ex
 - **`tailwind.config.ts`**: Tailwind CSS configuration.
 - **`tsconfig.json`**: TypeScript configuration.
 - **`next.config.mjs`**: Next.js configuration.
+
