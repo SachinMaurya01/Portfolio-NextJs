@@ -40,25 +40,26 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus("SENDING");
+    setStatus("ERROR");
+    setStatusText("Currently email is not available. Please reach out to me via social media like Linkedin or Email.");
 
-    try {
-      console.log("Form data:", formData);
-      setTimeout(() => {
-        setStatus("DONE");
-        setFormData({
-          email: "",
-          message: "",
-          name: "",
-          subject: "",
-        });
-        setStatusText("Message sent successfully!");
-      }, 3000);
-    } catch (error: any) {
-      setStatus("ERROR");
-      setStatusText("Error in sending message: " + error.message);
-      console.error("Error sending message:", error.message);
-    }
+    // try {
+    //   console.log("Form data:", formData);
+    //   setTimeout(() => {
+    //     setStatus("DONE");
+    //     setFormData({
+    //       email: "",
+    //       message: "",
+    //       name: "",
+    //       subject: "",
+    //     });
+    //     setStatusText("Message sent successfully!");
+    //   }, 3000);
+    // } catch (error: any) {
+    //   setStatus("ERROR");
+    //   setStatusText("Error in sending message: " + error.message);
+    //   console.error("Error sending message:", error.message);
+    // }
   };
 
   useEffect(() => {
@@ -82,7 +83,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
             className={cn(
-              "fixed top-4 right-4 p-2 px-4 w-[300px] z-50 h-16 rounded-xl bg-white flex items-center",
+              "fixed top-4 right-4 p-2 px-4 w-[auto] z-50 h-16 rounded-xl bg-white flex items-center",
               status === "ERROR"
                 ? "bg-red-500"
                 : status === "DONE"
@@ -90,7 +91,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
                 : ""
             )}
           >
-            <p className="text-black font-semibold">{statusText}</p>
+            <p className="text-white font-semibold">{statusText}</p>
           </motion.li>
         )}
       </AnimatePresence>
@@ -162,7 +163,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
                   type="submit"
                 >
                   <TextReveal className="uppercase">
-                    {status === "SENDING" ? "Sending..." : "discuss project"}
+                    {status === "SENDING" ? "Sending..." : "Submit"}
                   </TextReveal>
                 </motion.button>
               </Transition>
@@ -211,10 +212,10 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
           <p>
             developed by @
             <Link
-              href={"https://twitter.com/tehseen_type"}
+              href={"https://www.linkedin.com/in/sachin-maurya-36333b1b3/"}
               className="hover:underline"
             >
-              tehseen
+              Sachin Maurya
             </Link>
           </p>
         </Transition>

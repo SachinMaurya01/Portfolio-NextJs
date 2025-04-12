@@ -59,7 +59,8 @@ const About = ({ about, timeline }: AboutProps) => {
               width={400}
               height={400}
               alt={about.name}
-              className="rounded-xl max-md:aspect-square object-cover"
+              className="rounded-full max-md:aspect-square object-cover"
+              style={{ }}
             />
           </Transition>
         </div>
@@ -122,15 +123,14 @@ const TimelineCard = ({
         </div>
         <div className="max-md:text-xs">
           <span className="italic">
-            {formatDate(timeline.startDate).month +
+            {timeline.startDate}
+            {/* {formatDate(timeline.startDate).month +
               ", " +
-              formatDate(timeline.startDate).year}
+              formatDate(timeline.startDate).year} */}
           </span>
           {" - "}
           <span className="italic">
-            {formatDate(timeline.endDate).month +
-              ", " +
-              formatDate(timeline.endDate).year}
+          {timeline.endDate}
           </span>
         </div>
       </div>

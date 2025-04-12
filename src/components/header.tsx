@@ -174,10 +174,10 @@ const navLinks = [
     title: "About",
     href: "#about",
   },
-  {
-    title: "Services",
-    href: "#services",
-  },
+  // {
+  //   title: "Services",
+  //   href: "#services",
+  // },
   {
     title: "Projects",
     href: "#projects",

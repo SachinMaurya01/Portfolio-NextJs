@@ -1,24 +1,24 @@
 {
   "about": {
-    "name": "John doe",
+    "name": "Sachin Maurya",
     "title": "Software Developer",
-    "subTitle": "I develop 3D visuals, user interfaces and web applications",
-    "description": "As a React developer with 5 years of experience, I have honed my skills in JavaScript and am currently learning TypeScript to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
+    "subTitle": "I develop Full stack Application from concept to deployment.",
+    "description": "As a Full stack Developer with 2+ years of experience, I have honed my skills in JavaScript , TypeScript , Python and React. I currently learning Data Structures and System Design to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
     "quote": "Live the Life as you want",
-    "exp_year": "5",
-    "address": "Los Angeles , America",
+    "exp_year": "2",
+    "address": "Faridabad , Haryana",
     "some_total": "90",
-    "phoneNumber": "+91-9528391901",
-    "contactEmail": "work.tehseen@gmail.com",
+    "phoneNumber": "+91-8287030853",
+    "contactEmail": "mauryasachin789@gmail.com",
     "avatar": {
       "public_id": "portfolio3/1713995155677-122l5x.webp",
-      "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1713995155677-122l5x.webp"
+      "url": "https://cdn.vectorstock.com/i/2000v/75/67/programmer-computer-expert-chalk-white-icon-vector-37237567.avif"
     },
     "alternateAvatars": [
       {
         "_id": "676e772d8a9e1d0a8b0647ca",
         "public_id": "portfolio3/1713996156944-1hro1b.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1713996156944-1hro1b.webp"
+        "url": "https://cdn.vectorstock.com/i/2000v/75/67/programmer-computer-expert-chalk-white-icon-vector-37237567.avif"
       }
     ]
   },
@@ -28,129 +28,50 @@
   },
   "_id": "65b3a22c01d900e96c4219ae",
   "username": "portfolio3",
-  "email": "work.tehseen@gmail.com",
+  "email": "mauryasachin789@gmail.com",
   "role": "admin",
   "timeline": [
     {
-      "company_name": "StartupX",
-      "summary": "Contributed to the development of a new social networking platform targeting niche communities.",
-      "sequence": 6,
-      "startDate": "2023-11-13T00:00:00.000Z",
-      "endDate": "2024-03-13T00:00:00.000Z",
-      "jobTitle": "Backend Developer",
-      "jobLocation": " Los Angeles, CA",
-      "bulletPoints": [
-        "Developed scalable backend services using Python and Django framework.",
-        "\nImplemented user authentication and authorization using OAuth 2.0 and JWT tokens.",
-        "\nDesigned and optimized database schemas for performance and scalability.",
-        "\nImplemented real-time messaging features using WebSockets and Redis.",
-        "\nWorked closely with frontend developers to design APIs and ensure smooth integration with the frontend."
-      ],
-      "forEducation": true,
-      "enabled": true,
-      "_id": "65f1fe900556c3f887e9db94"
-    },
-    {
-      "company_name": "CloudTech Innovations",
-      "summary": "Contributed to the development of a cloud-based SaaS platform for managing IT infrastructure.",
-      "sequence": 4,
-      "startDate": "2024-03-06T00:00:00.000Z",
-      "endDate": "2024-03-20T00:00:00.000Z",
-      "jobTitle": "Software Developer",
-      "jobLocation": "Austin, TX",
-      "bulletPoints": [
-        "Developed microservices using Node.js and deployed them using Docker containers.",
-        "\nImplemented user authentication and authorization using OAuth 2.0 and JWT tokens.",
-        "\nIntegrated with cloud providers such as AWS and Azure to manage infrastructure resources.",
-        "\nDesigned and implemented RESTful APIs for various platform features.",
-        "\nCollaborated with DevOps engineers to automate deployment and testing processes."
-      ],
-      "forEducation": false,
-      "enabled": true,
-      "_id": "65f1fe4e0556c3f887e9db22"
-    },
-    {
-      "company_name": "Digital Solutions Co.",
-      "summary": "Contributed to the development of a comprehensive CRM solution for enterprise clients.",
-      "sequence": 3,
-      "startDate": "2023-10-11T00:00:00.000Z",
-      "endDate": "2024-03-28T00:00:00.000Z",
-      "jobTitle": "Frontend Developer",
-      "jobLocation": "Seattle, WA",
-      "bulletPoints": [
-        "Implemented user interface components using AngularJS and TypeScript.",
-        "\nCollaborated with backend developers to integrate frontend components with RESTful APIs.",
-        "\nDeveloped custom data visualizations and dashboards using D3.js and Chart.js.",
-        "\nParticipated in sprint planning meetings and provided accurate estimates for feature development.",
-        "\nConducted A/B tests and analyzed user feedback to iterate on product features.",
-        ""
-      ],
-      "forEducation": false,
-      "enabled": true,
-      "_id": "65f1fe1e0556c3f887e9dab2"
-    },
-    {
-      "company_name": "DataTech Solutions",
-      "summary": "Played a key role in developing a data analytics platform for a diverse range of clients.",
-      "sequence": 2,
-      "startDate": "2024-03-13T00:00:00.000Z",
-      "endDate": "2024-03-22T00:00:00.000Z",
-      "jobTitle": " Full Stack Developer",
-      "jobLocation": " New York, NY",
-      "bulletPoints": [
-        "Developed RESTful APIs and integrated third-party services to ingest and process large volumes of data.",
-        "\nDesigned and implemented responsive user interfaces using React.js and Bootstrap.",
-        "\nWorked closely with data scientists to integrate machine learning models into the platform.",
-        "\nOptimized database queries and improved overall system performance.",
-        "\nConducted unit tests and participated in peer code reviews to ensure code quality.\n"
-      ],
-      "forEducation": true,
-      "enabled": true,
-      "_id": "65f1fdef0556c3f887e9da44"
-    },
-    {
-      "company_name": "Tech Innovations Inc.",
-      "summary": "Contributed to the development of a cutting-edge mobile application aimed at revolutionizing the e-commerce industry.\n",
-      "sequence": 1,
-      "icon": {
-        "public_id": "portfolio3/1710357917833-0mic4.png",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1710357917833-0mic4.png"
-      },
-      "startDate": "2024-01-03T00:00:00.000Z",
-      "endDate": "2024-03-08T00:00:00.000Z",
-      "jobTitle": "Software Engineer",
-      "jobLocation": "San Francisco, CA",
-      "bulletPoints": [
-        "Implemented core features and functionalities using React Native.",
-        "Collaborated closely with designers and product managers to iterate on user feedback.",
-        "Conducted code reviews and provided constructive feedback to team members.",
-        "Resolved complex technical challenges to ensure the smooth operation of the application.",
-        "Participated in daily stand-up meetings and sprint planning sessions."
-      ],
-      "forEducation": false,
-      "enabled": true,
-      "_id": "65f1fd9e0556c3f887e9d9d8"
-    },
-    {
-      "company_name": "ThePortfolyo",
+      "company_name": "SoftxAI Technology Private Limited ",
       "summary": "",
       "sequence": 1,
       "icon": {
         "public_id": "1706289470834-siro83",
         "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706289470834-siro83"
       },
-      "startDate": "2023-12-13T00:00:00.000Z",
-      "endDate": "2024-01-25T00:00:00.000Z",
+      "startDate": "February 2024",
+      "endDate": "Present",
       "jobTitle": "Software Developer",
-      "jobLocation": "Bangalore",
+      "jobLocation": "Hyderabad, India",
       "bulletPoints": [
-        "Design and build full website",
-        " Optimized Site ",
-        " SEO implemented"
+        "Developed full-stack web applications using NestJS/Python for the back end and React for the front end.",
+        " Designed and implemented 3 microservices in NestJS, improving scalability and maintainability. ",
+        " Configured AWS instances and set up Cloud Watch alarms for all microservices to notify if any issue occurs during runtime or any traffic spikes. ",
+        " Automated database migrations by developing scripts to compare schemas and generate scripts for missing tables, columns, and indexes between different environments. ",
+        " Removed force update dependency by upgrading package versions properly, ensuring stability. Implemented dynamic and interactive features using latest React practices. ",
+        " Conducted code reviews and mentored junior developers, improving code quality, taking debugger sessions, and increasing integration efficiency. "
       ],
       "forEducation": true,
       "enabled": true,
       "_id": "65b3e93feb20546ae6d46369"
+    },
+    {
+      "company_name": "Hex Business Innovations",
+      "sequence": 2,
+      "startDate": "March 2023",
+      "endDate": "December 2024",
+      "jobTitle": " Software Developer",
+      "jobLocation": " Delhi, India",
+      "bulletPoints": [
+        "Collaborated with the team members to enhance HEX products by integrating and refining features for optimized performance.",
+        "\nReusable code and libraries were created for future usage and used Redux.",
+        "\nImproved website performance in terms of SEO, loading time, and UI/UX by implementing SSR.",
+        "\nCollaborated with senior developers to migrate backend technology from PHP to Node.js, enhancing performance and scalability.",
+        "\nContributed to projects like Lawcrux (e-book), Seetech E-Commerce, VMS, Audio Logger, and Hex Complaint Register etc.\n"
+      ],
+      "forEducation": true,
+      "enabled": true,
+      "_id": "65f1fdef0556c3f887e9da44"
     }
   ],
   "skills": [
@@ -165,18 +86,6 @@
         "_id": "65b3e661b48589dfcae187f8"
       },
       "_id": "65b3e661b48589dfcae187f7"
-    },
-    {
-      "enabled": true,
-      "name": "Python",
-      "sequence": 16,
-      "percentage": 86,
-      "image": {
-        "public_id": "1706288708710-nrq74s",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
-        "_id": "65b3e645b48589dfcae187a3"
-      },
-      "_id": "65b3e645b48589dfcae187a2"
     },
     {
       "enabled": true,
@@ -205,7 +114,7 @@
     {
       "enabled": true,
       "name": "TypeScript",
-      "sequence": 6,
+      "sequence": 14,
       "percentage": 90,
       "image": {
         "public_id": "1706287104739-pm8en",
@@ -216,8 +125,32 @@
     },
     {
       "enabled": true,
+      "name": "Python",
+      "sequence": 13,
+      "percentage": 86,
+      "image": {
+        "public_id": "1706288708710-nrq74s",
+        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
+        "_id": "65b3e645b48589dfcae187a3"
+      },
+      "_id": "65b3e645b48589dfcae187a2"
+    },
+    {
+      "enabled": true,
+      "name": "NestJs",
+      "sequence": 12,
+      "percentage": 86,
+      "image": {
+        "public_id": "1706288708710-nrq76s",
+        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
+        "_id": "65b3e645b48589dfcae197a3"
+      },
+      "_id": "65b3e645b48589dfcae197a2"
+    },
+    {
+      "enabled": true,
       "name": "Node.js",
-      "sequence": 7,
+      "sequence": 11,
       "percentage": 92,
       "image": {
         "public_id": "1706286990341-tznh4",
@@ -228,8 +161,20 @@
     },
     {
       "enabled": true,
+      "name": "AWS",
+      "sequence": 10,
+      "percentage": 80,
+      "image": {
+        "public_id": "1706286990341-tznh4",
+        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286990341-tznh4",
+        "_id": "65b3df8fb48589dfcae18205"
+      },
+      "_id": "65b3df8fb48589dfcae18804"
+    },
+    {
+      "enabled": true,
       "name": "MongoDB",
-      "sequence": 13,
+      "sequence": 9,
       "percentage": 70,
       "image": {
         "public_id": "1706286966065-p2yrx9",
@@ -240,36 +185,24 @@
     },
     {
       "enabled": true,
-      "name": "Three.js",
+      "name": "Redis",
       "sequence": 9,
       "percentage": 70,
       "image": {
         "public_id": "1706286941212-chpzl",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286941212-chpzl",
+        "url": "",
         "_id": "65b3df5db48589dfcae18189"
       },
       "_id": "65b3df5db48589dfcae18188"
     },
     {
       "enabled": true,
-      "name": "Redux",
-      "sequence": 7,
-      "percentage": 95,
-      "image": {
-        "public_id": "1706286913147-nwiky8",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286913147-nwiky8",
-        "_id": "65b3df41b48589dfcae1814e"
-      },
-      "_id": "65b3df41b48589dfcae1814d"
-    },
-    {
-      "enabled": true,
       "name": "Javascript",
-      "sequence": 3,
+      "sequence": 8,
       "percentage": 95,
       "image": {
         "public_id": "1706288679775-y4qwn3",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288679775-y4qwn3",
+        "url": "",
         "_id": "65b3e628b48589dfcae18750"
       },
       "_id": "65b3df24b48589dfcae18114"
@@ -277,11 +210,10 @@
     {
       "enabled": true,
       "name": "Git",
-      "sequence": 12,
+      "sequence": 7,
       "percentage": 95,
       "image": {
         "public_id": "1706286842731-r0eyn",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286842731-r0eyn",
         "_id": "65b3defbb48589dfcae180de"
       },
       "_id": "65b3defbb48589dfcae180dd"
@@ -289,23 +221,21 @@
     {
       "enabled": true,
       "name": "Github",
-      "sequence": 11,
+      "sequence": 6,
       "percentage": 95,
       "image": {
         "public_id": "1706286821409-21cuqs",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286821409-21cuqs",
         "_id": "65b3dee5b48589dfcae180a9"
       },
       "_id": "65b3dee5b48589dfcae180a8"
     },
     {
       "enabled": true,
-      "name": "Sass",
-      "sequence": 10,
+      "name": "Kafka",
+      "sequence": 5,
       "percentage": 95,
       "image": {
         "public_id": "1706286780392-39i48h",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286780392-39i48h",
         "_id": "65b3debcb48589dfcae18076"
       },
       "_id": "65b3debcb48589dfcae18075"
@@ -313,31 +243,18 @@
     {
       "enabled": true,
       "name": "GraphQl",
-      "sequence": 9,
+      "sequence": 4,
       "percentage": 80,
       "image": {
         "public_id": "1706286760237-gh4idq",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286760237-gh4idq",
         "_id": "65b3dea8b48589dfcae18045"
       },
       "_id": "65b3dea8b48589dfcae18044"
     },
     {
       "enabled": true,
-      "name": "Vercel",
-      "sequence": 7,
-      "percentage": 90,
-      "image": {
-        "public_id": "1706286729467-rbblgb",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286729467-rbblgb",
-        "_id": "65b3de89b48589dfcae18016"
-      },
-      "_id": "65b3de89b48589dfcae18015"
-    },
-    {
-      "enabled": true,
       "name": "Next.js",
-      "sequence": 6,
+      "sequence": 3,
       "percentage": 90,
       "image": {
         "public_id": "1706286682511-rgp96r",
@@ -349,7 +266,7 @@
     {
       "enabled": true,
       "name": "React",
-      "sequence": 5,
+      "sequence": 2,
       "percentage": 90,
       "image": {
         "public_id": "1706291833080-0loo09",
@@ -360,7 +277,7 @@
     },
     {
       "enabled": true,
-      "name": "Tailwind",
+      "name": "PostgreSQL",
       "sequence": 4,
       "percentage": 99,
       "image": {
@@ -369,28 +286,6 @@
         "_id": "65b3de19b48589dfcae17f95"
       },
       "_id": "65b3de19b48589dfcae17f94"
-    },
-    {
-      "enabled": true,
-      "name": "CSS",
-      "sequence": 2,
-      "percentage": 97,
-      "image": {
-        "public_id": "1706286273084-romle",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286273084-romle"
-      },
-      "_id": "65b3dcc1b48589dfcae17e4d"
-    },
-    {
-      "name": "HTML",
-      "sequence": 1,
-      "percentage": 98,
-      "image": {
-        "public_id": "1706286058630-v3ax0a",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286058630-v3ax0a"
-      },
-      "_id": "65b3dbeba5c8d2db7b6164bc",
-      "enabled": true
     }
   ],
   "youtube": [
@@ -406,256 +301,78 @@
   ],
   "projects": [
     {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 14",
+      "liveurl": "",
+      "githuburl": "https://github.com/SachinMaurya01/Quick-Chat-FullStack",
+      "title": "Quick-Chat-FullStack",
       "sequence": 14,
       "image": {
         "public_id": "1706285511679-xe7r9t",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285511679-xe7r9t"
+        "url": "https://ninjachat.com/images/live-chat-app-inner-feature-rhs.png?v=1690290110521771960"
       },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
+      "description": " Quick Chat is a real-time chat application built with React, Node.js, and Socket.io. It allows users to create and join chat rooms, send messages, and communicate in real-time. The application features user authentication, message history, and a responsive design for seamless usage on various devices.",
+      "techStack": ["Express", "Node.js", "Next.js", "PostgreSQL", "Socket.io",  "Redis"],
       "_id": "65b3d9c8d017f6b49c778ca7",
       "enabled": true
     },
     {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 14",
+      "liveurl": "https://personalplayer.netlify.app/",
+      "githuburl": "https://github.com/SachinMaurya01/VideoPlayer",
+      "title": "Video Player",
       "sequence": 15,
       "image": {
         "public_id": "1706285468702-igx05q",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285468702-igx05q"
+        "url": "https://play-lh.googleusercontent.com/91XTD4MZmII60AsPb54fFBGxjFKJCRgxq461V39V3_pDxKUxKlQC-XLtRL1A8w56cBA=w526-h296-rw"
       },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
+      "description": " A video player application built with React and Redux. It allows users to play, and manage their video files. The application features a user-friendly interface, video controls, and support for various video formats.",
+      "techStack": ["Reactjs ", " HTML ", " CSS"],
       "_id": "65b3d99dd017f6b49c778c86",
       "enabled": true
     },
     {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 13",
+      "liveurl": "https://jewelrybysachin.netlify.app/",
+      "githuburl": "https://github.com/SachinMaurya01/JewelryResponsiveWebsite",
+      "title": "Jewellery Shop",
       "sequence": 13,
       "image": {
         "public_id": "1706285431821-3lfg2r",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285431821-3lfg2r"
+        "url": "https://5.imimg.com/data5/SELLER/Default/2022/3/BZ/QS/DT/14579595/on-line-fashion-jewelry-website-design.jpg"
       },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
+      "description": " A jewellery website built with React and Redux.  ",
+      "techStack": ["Reactjs ", " HTML ", " CSS"],
       "_id": "65b3d978d017f6b49c778c67",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 12",
-      "sequence": 12,
-      "image": {
-        "public_id": "1706285416017-wra7swm",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285416017-wra7swm"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d969d017f6b49c778c4a",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 11",
-      "sequence": 11,
-      "image": {
-        "public_id": "1706285405228-98liol",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285405228-98liol"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d95dd017f6b49c778c2f",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 10",
-      "sequence": 10,
-      "image": {
-        "public_id": "1706285393568-zl9mcc",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285393568-zl9mcc"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs "],
-      "_id": "65b3d952d017f6b49c778c16",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 9",
-      "sequence": 9,
-      "image": {
-        "public_id": "1706285378965-91vbk",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285378965-91vbk"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d943d017f6b49c778bff",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 8",
-      "sequence": 8,
-      "image": {
-        "public_id": "1706285368529-zdr5fl",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285368529-zdr5fl"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs  ", " Mern ", " CSS"],
-      "_id": "65b3d938d017f6b49c778bea",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 7",
-      "sequence": 7,
-      "image": {
-        "public_id": "1706285357884-3ja6sw",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285357884-3ja6sw"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs   ", " CSS"],
-      "_id": "65b3d92ed017f6b49c778bd7",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 6",
-      "sequence": 6,
-      "image": {
-        "public_id": "1706285347449-dniw0h",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285347449-dniw0h"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": [" Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d923d017f6b49c778bc6",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 5",
-      "sequence": 5,
-      "image": {
-        "public_id": "1706285323287-nt3ya3",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706285323287-nt3ya3"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Mern ", " CSS"],
-      "_id": "65b3d8fed017f6b49c778ba9",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 4",
-      "sequence": 4,
-      "image": {
-        "public_id": "1706284852474-gh2ng",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706284852474-gh2ng"
-      },
-      "description": "lorem ipsumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d734313a9b09a24a14a3",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 3",
-      "sequence": 3,
-      "image": {
-        "public_id": "1706284839761-ckccdj",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706284839761-ckccdj"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d728313a9b09a24a1498",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 2",
-      "sequence": 2,
-      "image": {
-        "public_id": "1706284824843-56iakg",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706284824843-56iakg"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS ", " TailwindCSS"],
-      "_id": "65b3d719313a9b09a24a148f",
-      "enabled": true
-    },
-    {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Project 1",
-      "sequence": 1,
-      "image": {
-        "public_id": "1706284812399-jr7rqj",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706284812399-jr7rqj"
-      },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "techStack": ["Reactjs ", " Nextjs ", " Mern ", " CSS"],
-      "_id": "65b3d70d313a9b09a24a1488",
       "enabled": true
     }
   ],
   "social_handles": [
     {
-      "platform": "Instagram",
-      "url": "https://www.instagram.com/tehseen.01/",
-      "image": {
-        "public_id": "1708718250873-3038n7.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp"
-      },
-      "enabled": true,
-      "_id": "65b3ea4feb20546ae6d4641d"
-    },
-    {
       "platform": "LinkedIn",
-      "url": "http://www.linkedin.com/in/tehseen01",
+      "url": "https://www.linkedin.com/in/sachin-maurya-36333b1b3/",
       "image": {
         "public_id": "1708718263294-2lfj67.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp"
+        "url": ""
       },
       "enabled": true,
       "_id": "65b3e99beb20546ae6d463c2"
     },
     {
       "enabled": true,
-      "platform": "Twitter",
-      "url": "https://x.com/tehseen_type",
+      "platform": "Github",
+      "url": "https://github.com/SachinMaurya01",
       "image": {
         "public_id": "1708718328750-d4jsq.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718328750-d4jsq.webp"
+        "url": ""
       },
       "_id": "65b3e47cb48589dfcae185bd"
     },
     {
       "enabled": true,
-      "platform": "Facebook",
-      "url": "#",
+      "platform": "Resume",
+      "url": "https://drive.google.com/file/d/1jx0EHW5tN0sTG667QEt08aJvxJoHZOXV/view?usp=drive_link",
       "image": {
-        "public_id": "1708718346601-xldm.webp",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp"
+        "public_id": "1708718328750-d4jsq.webp",
+        "url": ""
       },
-      "_id": "65b3e43cb48589dfcae1856c"
+      "_id": "65b3e47cb48589dfcae188bd"
     }
   ],
   "services": [
