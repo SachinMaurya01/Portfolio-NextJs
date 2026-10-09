@@ -1,69 +1,82 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, Variants } from "motion/react";
-import { useEffect } from "react";
+import { motion, useMotionValue, useSpring } from "motion/react";
+import { useEffect, useState } from "react";
 
 import { useVariants } from "../utils/hooks";
 
+/* Trailing cursor: instant dot + spring ring. Desktop only. */
 function CustomCursor() {
   const { variant } = useVariants();
+  const [enabled, setEnabled] = useState(false);
+  const [hovering, setHovering] = useState(false);
+  const [pressed, setPressed] = useState(false);
 
-  const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
+  const x = useMotionValue(-100);
+  const y = useMotionValue(-100);
 
-  const springConfig = { damping: 25, stiffness: 100 };
-  const cursorXSpring = useSpring(cursorX, springConfig);
-  const cursorYSpring = useSpring(cursorY, springConfig);
+  const ringX = useSpring(x, { damping: 22, stiffness: 180, mass: 0.6 });
+  const ringY = useSpring(y, { damping: 22, stiffness: 180, mass: 0.6 });
 
   useEffect(() => {
-    const moveCursor = (e: MouseEvent) => {
-      requestAnimationFrame(() => {
-        // Update position only on animation frame
-        cursorX.set(e.clientX - (variant === "PROJECT" ? 32 : 8)); // Adjust offset based on variant
-        cursorY.set(e.clientY - (variant === "PROJECT" ? 32 : 8));
-      });
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+    setEnabled(true);
+
+    const move = (e: MouseEvent) => {
+      x.set(e.clientX);
+      y.set(e.clientY);
+      const t = e.target as HTMLElement | null;
+      setHovering(!!t?.closest?.("a, button, [data-cursor]"));
     };
+    const down = () => setPressed(true);
+    const up = () => setPressed(false);
 
-    window.addEventListener("mousemove", moveCursor);
-
+    window.addEventListener("mousemove", move, { passive: true });
+    window.addEventListener("mousedown", down);
+    window.addEventListener("mouseup", up);
     return () => {
-      window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mousemove", move);
+      window.removeEventListener("mousedown", down);
+      window.removeEventListener("mouseup", up);
     };
-  }, [variant]);
+  }, [x, y]);
 
-  const variants: Variants = {
-    DEFAULT: {
-      width: 16,
-      height: 16,
-      border: "1px solid white",
-    },
-    PROJECT: {
-      height: 100,
-      width: 100,
-    },
-    BUTTON: {
-      opacity: 0,
-    },
-    TEXT: {
-      height: 100,
-      width: 100,
-      backgroundColor: "transparent",
-      border: "1px solid white",
-    },
-  };
+  if (!enabled) return null;
+
+  const isProject = variant === "PROJECT";
 
   return (
-    <motion.div
-      className="fixed top-0 left-0 bg-white mix-blend-difference z-50 rounded-full pointer-events-none grid place-items-center max-md:hidden"
-      variants={variants}
-      animate={variant}
-      style={{
-        translateX: cursorXSpring,
-        translateY: cursorYSpring,
-      }}
-    >
-      {variant === "PROJECT" && <div className="text-black">OPEN</div>}
-    </motion.div>
+    <>
+      <motion.div
+        aria-hidden
+        className="pointer-events-none fixed left-0 top-0 z-[60] grid place-items-center rounded-full border border-primary/50 bg-primary/10 backdrop-blur-[1px]"
+        style={{ x: ringX, y: ringY, translateX: "-50%", translateY: "-50%" }}
+        animate={{
+          width: isProject ? 88 : hovering ? 52 : 32,
+          height: isProject ? 88 : hovering ? 52 : 32,
+          opacity: 1,
+          scale: pressed ? 0.85 : 1,
+        }}
+        transition={{ type: "spring", damping: 20, stiffness: 260 }}
+      >
+        {isProject && (
+          <span className="text-[11px] font-bold tracking-widest text-primary">
+            VIEW
+          </span>
+        )}
+      </motion.div>
+
+      <motion.div
+        aria-hidden
+        className="pointer-events-none fixed left-0 top-0 z-[60] rounded-full bg-primary mix-blend-screen"
+        style={{ x, y, translateX: "-50%", translateY: "-50%" }}
+        animate={{
+          width: pressed ? 4 : 8,
+          height: pressed ? 4 : 8,
+          opacity: 0.9,
+        }}
+      />
+    </>
   );
 }
 

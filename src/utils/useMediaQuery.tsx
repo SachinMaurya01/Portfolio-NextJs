@@ -18,7 +18,7 @@ export function useMediaQuery(
     const listener = () => setMatches(media.matches);
 
     if (options?.initializeWithValue !== false) {
-      setMatches(media.matches); // Initialize with initial state
+      setMatches(media.matches);
     }
 
     window.addEventListener("resize", listener);

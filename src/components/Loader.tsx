@@ -35,7 +35,7 @@ const Loader = ({ setHideLoader }: PageLoadProps) => {
     >
       <div className="p-4 md:p-10 flex flex-col md:justify-between max-md:gap-8 w-full h-full">
         <Transition transition={{ delay: 0.2 }}>
-          <span className="font-semibold text-white/40">ThePortfolio</span>
+          <span className="font-semibold text-foreground/40">ThePortfolio</span>
         </Transition>
         <div className="flex flex-col max-md:justify-between max-md:h-full">
           <Transition transition={{ delay: 0.4 }}>
@@ -46,7 +46,7 @@ const Loader = ({ setHideLoader }: PageLoadProps) => {
             </div>
           </Transition>
           <div className="flex justify-between items-end">
-            <span className="text-white/30">Loading...</span>
+            <span className="text-foreground/30">Loading...</span>
             <motion.span className="md:text-9xl text-7xl font-semibold md:font-bold">
               {counter}%
             </motion.span>

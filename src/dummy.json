@@ -1,12 +1,12 @@
 {
   "about": {
     "name": "Sachin Maurya",
-    "title": "Software Developer",
-    "subTitle": "I develop Full stack Application from concept to deployment.",
-    "description": "As a Full stack Developer with 2+ years of experience, I have honed my skills in JavaScript , TypeScript , Python and React. I currently learning Data Structures and System Design to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.",
-    "quote": "Live the Life as you want",
-    "exp_year": "2",
-    "address": "Faridabad , Haryana",
+    "title": "Software Engineer - Backend, Cloud & Applied GenAI",
+    "subTitle": "4 years building production backend systems, cloud infrastructure, and applied GenAI/RAG pipelines.",
+    "description": "Software Engineer with 4 years building production backend systems, cloud infrastructure, and applied GenAI/RAG pipelines. Hands-on with an LLM-based RAG system alongside strong backend and DevOps-adjacent skills in Python, Golang, AWS, Docker, CI/CD, and observability. Currently at Skets Studio building a centralized Go API Gateway, event-driven AWS notification systems, and full observability stacks.",
+    "quote": "Ship reliable backends, scale with confidence",
+    "exp_year": "4",
+    "address": "Delhi, India",
     "some_total": "90",
     "phoneNumber": "+91-8287030853",
     "contactEmail": "mauryasachin789@gmail.com",
@@ -32,260 +32,511 @@
   "role": "admin",
   "timeline": [
     {
-      "company_name": "SoftxAI Technology Private Limited ",
-      "summary": "",
+      "company_name": "Skets Studio",
+      "summary": "Centralized Go API Gateway + event-driven AWS platform with full observability and modern CI/CD.",
       "sequence": 1,
-      "icon": {
-        "public_id": "1706289470834-siro83",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706289470834-siro83"
-      },
-      "startDate": "February 2024",
+      "startDate": "Oct 2025",
       "endDate": "Present",
-      "jobTitle": "Software Developer",
-      "jobLocation": "Hyderabad, India",
+      "jobTitle": "Software Engineer",
+      "jobLocation": "Delhi, India (Hybrid)",
       "bulletPoints": [
-        "Developed full-stack web applications using NestJS/Python for the back end and React for the front end.",
-        " Designed and implemented 3 microservices in NestJS, improving scalability and maintainability. ",
-        " Configured AWS instances and set up Cloud Watch alarms for all microservices to notify if any issue occurs during runtime or any traffic spikes. ",
-        " Automated database migrations by developing scripts to compare schemas and generate scripts for missing tables, columns, and indexes between different environments. ",
-        " Removed force update dependency by upgrading package versions properly, ensuring stability. Implemented dynamic and interactive features using latest React practices. ",
-        " Conducted code reviews and mentored junior developers, improving code quality, taking debugger sessions, and increasing integration efficiency. "
+        "Built a centralized Go API Gateway serving 5 microservices with goroutine-based concurrency, channel-driven worker pools, context cancellation/timeouts, JWT auth, rate limiting, circuit breakers, routing, and service-to-service security.",
+        "Designed and shipped an event-driven notification system on AWS EventBridge and SQS (Golang consumers) with Dead Letter Queues and CloudWatch alerting, reducing undetected message failures by 20%.",
+        "Architected multi-stage GitLab CI/CD across QA, staging, and production with SonarQube gates, Trivy scanning, automated testing, and rollback, reducing deployment failures by 30%.",
+        "Adopted AWS Secrets Manager and OIDC-based deployments, eliminating hardcoded and long-lived cloud credentials.",
+        "Redesigned and normalized core database schemas with indexing, constraint optimization, and query tuning.",
+        "Architected isolated AWS dev environments with dedicated databases, cutting integration conflicts by 40%.",
+        "Built fault-tolerant video upload with S3 multipart uploads and IndexedDB fallback for interrupted recovery.",
+        "Engineered observability with Prometheus, Loki, OpenTelemetry, and Grafana (p95/p99, CPU/memory, error-rate), reducing incident resolution time by 25%."
       ],
       "forEducation": true,
       "enabled": true,
-      "_id": "65b3e93feb20546ae6d46369"
+      "_id": "exp-skets"
+    },
+    {
+      "company_name": "DOT Compliance Group",
+      "summary": "Scalable Python/Go/React applications and production microservices with monitoring and automation. Awarded Transformer of the Year (2024).",
+      "sequence": 2,
+      "startDate": "Feb 2024",
+      "endDate": "Aug 2025",
+      "jobTitle": "Software Developer",
+      "jobLocation": "Texas, USA (Remote)",
+      "bulletPoints": [
+        "Developed and maintained scalable web apps using Python (FastAPI), Golang (Gin), and React, supporting 200+ concurrent users.",
+        "Designed and maintained two production-grade microservices in Golang, improving scalability and modularity.",
+        "Implemented monitoring with AWS CloudWatch, SNS, and Grafana dashboards, cutting incident response time by 25%.",
+        "Automated end-to-end calling workflow integrating Dialpad via cron jobs and webhooks for real-time call tracking.",
+        "Conducted code reviews and debugging sessions, mentoring 4 junior developers.",
+        "Awarded Transformer of the Year (2024) for backend automation and DevOps optimization."
+      ],
+      "forEducation": true,
+      "enabled": true,
+      "_id": "exp-dot"
     },
     {
       "company_name": "Hex Business Innovations",
-      "sequence": 2,
-      "startDate": "March 2023",
-      "endDate": "December 2024",
-      "jobTitle": " Software Developer",
-      "jobLocation": " Delhi, India",
+      "summary": "Performance-critical product features, e-commerce platform, and legacy modernization.",
+      "sequence": 3,
+      "startDate": "Mar 2023",
+      "endDate": "Dec 2023",
+      "jobTitle": "Software Developer",
+      "jobLocation": "Delhi, India",
       "bulletPoints": [
-        "Collaborated with the team members to enhance HEX products by integrating and refining features for optimized performance.",
-        "\nReusable code and libraries were created for future usage and used Redux.",
-        "\nImproved website performance in terms of SEO, loading time, and UI/UX by implementing SSR.",
-        "\nCollaborated with senior developers to migrate backend technology from PHP to Node.js, enhancing performance and scalability.",
-        "\nContributed to projects like Lawcrux (e-book), Seetech E-Commerce, VMS, Audio Logger, and Hex Complaint Register etc.\n"
+        "Enhanced two products with performance-critical features, reducing API response time by 20%.",
+        "Owned end-to-end design and development of the Seetech e-commerce platform (300+ concurrent users) with custom checkout and inventory flow.",
+        "Implemented secure auth with JWT and OAuth 2.0 plus role-based access control.",
+        "Migrated legacy PHP backend to Node.js, reducing API latency by 30% and modernizing 5+ core services.",
+        "Built an audio logger system using PostgreSQL and AWS S3, cutting issue-tracking turnaround by 30%."
       ],
       "forEducation": true,
       "enabled": true,
-      "_id": "65f1fdef0556c3f887e9da44"
+      "_id": "exp-hex"
+    },
+    {
+      "company_name": "J.C. Bose University of Science and Technology",
+      "summary": "Bachelor of Technology in Computer Science and Engineering, Delhi-NCR, India.",
+      "sequence": 4,
+      "startDate": "June 2019",
+      "endDate": "June 2023",
+      "jobTitle": "B.Tech - Computer Science and Engineering",
+      "jobLocation": "Delhi-NCR, India",
+      "bulletPoints": [
+        "Bachelor of Technology in Computer Science and Engineering."
+      ],
+      "forEducation": true,
+      "enabled": true,
+      "_id": "edu-jcbose"
     }
   ],
   "skills": [
     {
       "enabled": true,
-      "name": "C++",
-      "sequence": 17,
-      "percentage": 87,
-      "image": {
-        "public_id": "1706288734207-4rlz3m",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288734207-4rlz3m",
-        "_id": "65b3e661b48589dfcae187f8"
-      },
-      "_id": "65b3e661b48589dfcae187f7"
-    },
-    {
-      "enabled": true,
-      "name": "Docker",
-      "sequence": 16,
-      "percentage": 85,
-      "image": {
-        "public_id": "1706287155946-z2oybb",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706287155946-z2oybb",
-        "_id": "65b3e034b48589dfcae182ce"
-      },
-      "_id": "65b3e034b48589dfcae182cd"
-    },
-    {
-      "enabled": true,
-      "name": "Figma",
-      "sequence": 15,
+      "name": "Python",
+      "sequence": 1,
       "percentage": 95,
       "image": {
-        "public_id": "1706287138776-slfc3e",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706287138776-slfc3e",
-        "_id": "65b3e023b48589dfcae18289"
+        "public_id": "skill-python",
+        "url": ""
       },
-      "_id": "65b3e023b48589dfcae18288"
+      "_id": "skill-001"
+    },
+    {
+      "enabled": true,
+      "name": "Golang",
+      "sequence": 2,
+      "percentage": 88,
+      "image": {
+        "public_id": "skill-golang",
+        "url": ""
+      },
+      "_id": "skill-002"
     },
     {
       "enabled": true,
       "name": "TypeScript",
-      "sequence": 14,
+      "sequence": 3,
       "percentage": 90,
       "image": {
-        "public_id": "1706287104739-pm8en",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706287104739-pm8en",
-        "_id": "65b3e001b48589dfcae18246"
+        "public_id": "skill-typescript",
+        "url": ""
       },
-      "_id": "65b3e001b48589dfcae18245"
+      "_id": "skill-003"
     },
     {
       "enabled": true,
-      "name": "Python",
-      "sequence": 13,
-      "percentage": 86,
+      "name": "LLMs",
+      "sequence": 4,
+      "percentage": 90,
       "image": {
-        "public_id": "1706288708710-nrq74s",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
-        "_id": "65b3e645b48589dfcae187a3"
+        "public_id": "skill-llms",
+        "url": ""
       },
-      "_id": "65b3e645b48589dfcae187a2"
+      "_id": "skill-004"
     },
     {
       "enabled": true,
-      "name": "NestJs",
+      "name": "RAG",
+      "sequence": 5,
+      "percentage": 92,
+      "image": {
+        "public_id": "skill-rag",
+        "url": ""
+      },
+      "_id": "skill-005"
+    },
+    {
+      "enabled": true,
+      "name": "Prompt Engineering",
+      "sequence": 6,
+      "percentage": 88,
+      "image": {
+        "public_id": "skill-prompt-engineering",
+        "url": ""
+      },
+      "_id": "skill-006"
+    },
+    {
+      "enabled": true,
+      "name": "LangGraph",
+      "sequence": 7,
+      "percentage": 87,
+      "image": {
+        "public_id": "skill-langgraph",
+        "url": ""
+      },
+      "_id": "skill-007"
+    },
+    {
+      "enabled": true,
+      "name": "Hybrid Retrieval",
+      "sequence": 8,
+      "percentage": 85,
+      "image": {
+        "public_id": "skill-hybrid-retrieval",
+        "url": ""
+      },
+      "_id": "skill-008"
+    },
+    {
+      "enabled": true,
+      "name": "RAGAS",
+      "sequence": 9,
+      "percentage": 82,
+      "image": {
+        "public_id": "skill-ragas",
+        "url": ""
+      },
+      "_id": "skill-009"
+    },
+    {
+      "enabled": true,
+      "name": "Pydantic",
+      "sequence": 10,
+      "percentage": 88,
+      "image": {
+        "public_id": "skill-pydantic",
+        "url": ""
+      },
+      "_id": "skill-010"
+    },
+    {
+      "enabled": true,
+      "name": "FastAPI",
+      "sequence": 11,
+      "percentage": 90,
+      "image": {
+        "public_id": "skill-fastapi",
+        "url": ""
+      },
+      "_id": "skill-011"
+    },
+    {
+      "enabled": true,
+      "name": "Gin",
       "sequence": 12,
-      "percentage": 86,
+      "percentage": 87,
       "image": {
-        "public_id": "1706288708710-nrq76s",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706288708710-nrq74s",
-        "_id": "65b3e645b48589dfcae197a3"
+        "public_id": "skill-gin",
+        "url": ""
       },
-      "_id": "65b3e645b48589dfcae197a2"
+      "_id": "skill-012"
+    },
+    {
+      "enabled": true,
+      "name": "Django",
+      "sequence": 13,
+      "percentage": 82,
+      "image": {
+        "public_id": "skill-django",
+        "url": ""
+      },
+      "_id": "skill-013"
     },
     {
       "enabled": true,
       "name": "Node.js",
-      "sequence": 11,
-      "percentage": 92,
-      "image": {
-        "public_id": "1706286990341-tznh4",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286990341-tznh4",
-        "_id": "65b3df8fb48589dfcae18205"
-      },
-      "_id": "65b3df8fb48589dfcae18204"
-    },
-    {
-      "enabled": true,
-      "name": "AWS",
-      "sequence": 10,
-      "percentage": 80,
-      "image": {
-        "public_id": "1706286990341-tznh4",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286990341-tznh4",
-        "_id": "65b3df8fb48589dfcae18205"
-      },
-      "_id": "65b3df8fb48589dfcae18804"
-    },
-    {
-      "enabled": true,
-      "name": "MongoDB",
-      "sequence": 9,
-      "percentage": 70,
-      "image": {
-        "public_id": "1706286966065-p2yrx9",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286966065-p2yrx9",
-        "_id": "65b3df76b48589dfcae181c6"
-      },
-      "_id": "65b3df76b48589dfcae181c5"
-    },
-    {
-      "enabled": true,
-      "name": "Redis",
-      "sequence": 9,
-      "percentage": 70,
-      "image": {
-        "public_id": "1706286941212-chpzl",
-        "url": "",
-        "_id": "65b3df5db48589dfcae18189"
-      },
-      "_id": "65b3df5db48589dfcae18188"
-    },
-    {
-      "enabled": true,
-      "name": "Javascript",
-      "sequence": 8,
-      "percentage": 95,
-      "image": {
-        "public_id": "1706288679775-y4qwn3",
-        "url": "",
-        "_id": "65b3e628b48589dfcae18750"
-      },
-      "_id": "65b3df24b48589dfcae18114"
-    },
-    {
-      "enabled": true,
-      "name": "Git",
-      "sequence": 7,
-      "percentage": 95,
-      "image": {
-        "public_id": "1706286842731-r0eyn",
-        "_id": "65b3defbb48589dfcae180de"
-      },
-      "_id": "65b3defbb48589dfcae180dd"
-    },
-    {
-      "enabled": true,
-      "name": "Github",
-      "sequence": 6,
-      "percentage": 95,
-      "image": {
-        "public_id": "1706286821409-21cuqs",
-        "_id": "65b3dee5b48589dfcae180a9"
-      },
-      "_id": "65b3dee5b48589dfcae180a8"
-    },
-    {
-      "enabled": true,
-      "name": "Kafka",
-      "sequence": 5,
-      "percentage": 95,
-      "image": {
-        "public_id": "1706286780392-39i48h",
-        "_id": "65b3debcb48589dfcae18076"
-      },
-      "_id": "65b3debcb48589dfcae18075"
-    },
-    {
-      "enabled": true,
-      "name": "GraphQl",
-      "sequence": 4,
-      "percentage": 80,
-      "image": {
-        "public_id": "1706286760237-gh4idq",
-        "_id": "65b3dea8b48589dfcae18045"
-      },
-      "_id": "65b3dea8b48589dfcae18044"
-    },
-    {
-      "enabled": true,
-      "name": "Next.js",
-      "sequence": 3,
+      "sequence": 14,
       "percentage": 90,
       "image": {
-        "public_id": "1706286682511-rgp96r",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286682511-rgp96r",
-        "_id": "65b3de5bb48589dfcae17fe9"
+        "public_id": "skill-node.js",
+        "url": ""
       },
-      "_id": "65b3de5bb48589dfcae17fe8"
+      "_id": "skill-014"
+    },
+    {
+      "enabled": true,
+      "name": "NestJS",
+      "sequence": 15,
+      "percentage": 86,
+      "image": {
+        "public_id": "skill-nestjs",
+        "url": ""
+      },
+      "_id": "skill-015"
     },
     {
       "enabled": true,
       "name": "React",
-      "sequence": 2,
+      "sequence": 16,
       "percentage": 90,
       "image": {
-        "public_id": "1706291833080-0loo09",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706291833080-0loo09",
-        "_id": "65b3f27aeb20546ae6d49e76"
+        "public_id": "skill-react",
+        "url": ""
       },
-      "_id": "65b3de41b48589dfcae17fbd"
+      "_id": "skill-016"
+    },
+    {
+      "enabled": true,
+      "name": "Next.js",
+      "sequence": 17,
+      "percentage": 90,
+      "image": {
+        "public_id": "skill-next.js",
+        "url": ""
+      },
+      "_id": "skill-017"
     },
     {
       "enabled": true,
       "name": "PostgreSQL",
-      "sequence": 4,
-      "percentage": 99,
+      "sequence": 18,
+      "percentage": 92,
       "image": {
-        "public_id": "1706286616701-2jka3q",
-        "url": "https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706286616701-2jka3q",
-        "_id": "65b3de19b48589dfcae17f95"
+        "public_id": "skill-postgresql",
+        "url": ""
       },
-      "_id": "65b3de19b48589dfcae17f94"
+      "_id": "skill-018"
+    },
+    {
+      "enabled": true,
+      "name": "MongoDB",
+      "sequence": 19,
+      "percentage": 85,
+      "image": {
+        "public_id": "skill-mongodb",
+        "url": ""
+      },
+      "_id": "skill-019"
+    },
+    {
+      "enabled": true,
+      "name": "Redis",
+      "sequence": 20,
+      "percentage": 88,
+      "image": {
+        "public_id": "skill-redis",
+        "url": ""
+      },
+      "_id": "skill-020"
+    },
+    {
+      "enabled": true,
+      "name": "Qdrant",
+      "sequence": 21,
+      "percentage": 84,
+      "image": {
+        "public_id": "skill-qdrant",
+        "url": ""
+      },
+      "_id": "skill-021"
+    },
+    {
+      "enabled": true,
+      "name": "pgvector",
+      "sequence": 22,
+      "percentage": 86,
+      "image": {
+        "public_id": "skill-pgvector",
+        "url": ""
+      },
+      "_id": "skill-022"
+    },
+    {
+      "enabled": true,
+      "name": "AWS",
+      "sequence": 23,
+      "percentage": 85,
+      "image": {
+        "public_id": "skill-aws",
+        "url": ""
+      },
+      "_id": "skill-023"
+    },
+    {
+      "enabled": true,
+      "name": "Docker",
+      "sequence": 24,
+      "percentage": 88,
+      "image": {
+        "public_id": "skill-docker",
+        "url": ""
+      },
+      "_id": "skill-024"
+    },
+    {
+      "enabled": true,
+      "name": "GitLab CI/CD",
+      "sequence": 25,
+      "percentage": 83,
+      "image": {
+        "public_id": "skill-gitlab-ci-cd",
+        "url": ""
+      },
+      "_id": "skill-025"
+    },
+    {
+      "enabled": true,
+      "name": "GitHub Actions",
+      "sequence": 26,
+      "percentage": 86,
+      "image": {
+        "public_id": "skill-github-actions",
+        "url": ""
+      },
+      "_id": "skill-026"
+    },
+    {
+      "enabled": true,
+      "name": "Kubernetes",
+      "sequence": 27,
+      "percentage": 80,
+      "image": {
+        "public_id": "skill-kubernetes",
+        "url": ""
+      },
+      "_id": "skill-027"
+    },
+    {
+      "enabled": true,
+      "name": "Kafka",
+      "sequence": 28,
+      "percentage": 86,
+      "image": {
+        "public_id": "skill-kafka",
+        "url": ""
+      },
+      "_id": "skill-028"
+    },
+    {
+      "enabled": true,
+      "name": "Prometheus",
+      "sequence": 29,
+      "percentage": 82,
+      "image": {
+        "public_id": "skill-prometheus",
+        "url": ""
+      },
+      "_id": "skill-029"
+    },
+    {
+      "enabled": true,
+      "name": "Grafana",
+      "sequence": 30,
+      "percentage": 82,
+      "image": {
+        "public_id": "skill-grafana",
+        "url": ""
+      },
+      "_id": "skill-030"
+    },
+    {
+      "enabled": true,
+      "name": "Loki",
+      "sequence": 31,
+      "percentage": 80,
+      "image": {
+        "public_id": "skill-loki",
+        "url": ""
+      },
+      "_id": "skill-031"
+    },
+    {
+      "enabled": true,
+      "name": "OpenTelemetry",
+      "sequence": 32,
+      "percentage": 80,
+      "image": {
+        "public_id": "skill-opentelemetry",
+        "url": ""
+      },
+      "_id": "skill-032"
+    },
+    {
+      "enabled": true,
+      "name": "Sentry",
+      "sequence": 33,
+      "percentage": 81,
+      "image": {
+        "public_id": "skill-sentry",
+        "url": ""
+      },
+      "_id": "skill-033"
+    },
+    {
+      "enabled": true,
+      "name": "System Design",
+      "sequence": 34,
+      "percentage": 88,
+      "image": {
+        "public_id": "skill-system-design",
+        "url": ""
+      },
+      "_id": "skill-034"
+    },
+    {
+      "enabled": true,
+      "name": "Microservices",
+      "sequence": 35,
+      "percentage": 89,
+      "image": {
+        "public_id": "skill-microservices",
+        "url": ""
+      },
+      "_id": "skill-035"
+    },
+    {
+      "enabled": true,
+      "name": "Event-Driven Architecture",
+      "sequence": 36,
+      "percentage": 87,
+      "image": {
+        "public_id": "skill-event-driven-architecture",
+        "url": ""
+      },
+      "_id": "skill-036"
+    },
+    {
+      "enabled": true,
+      "name": "Distributed Systems",
+      "sequence": 37,
+      "percentage": 86,
+      "image": {
+        "public_id": "skill-distributed-systems",
+        "url": ""
+      },
+      "_id": "skill-037"
+    },
+    {
+      "enabled": true,
+      "name": "API Gateway Design",
+      "sequence": 38,
+      "percentage": 84,
+      "image": {
+        "public_id": "skill-api-gateway-design",
+        "url": ""
+      },
+      "_id": "skill-038"
+    },
+    {
+      "enabled": true,
+      "name": "Agile",
+      "sequence": 39,
+      "percentage": 85,
+      "image": {
+        "public_id": "skill-agile",
+        "url": ""
+      },
+      "_id": "skill-039"
     }
   ],
   "youtube": [
@@ -302,51 +553,118 @@
   "projects": [
     {
       "liveurl": "",
-      "githuburl": "https://github.com/SachinMaurya01/Quick-Chat-FullStack",
-      "title": "Quick-Chat-FullStack",
-      "sequence": 14,
+      "githuburl": "https://github.com/SachinMaurya01/FinSight",
+      "title": "FinSight - Financial Filings RAG",
+      "sequence": 1,
       "image": {
-        "public_id": "1706285511679-xe7r9t",
-        "url": "https://ninjachat.com/images/live-chat-app-inner-feature-rhs.png?v=1690290110521771960"
+        "public_id": "finsight",
+        "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&auto=format&fit=crop"
       },
-      "description": " Quick Chat is a real-time chat application built with React, Node.js, and Socket.io. It allows users to create and join chat rooms, send messages, and communicate in real-time. The application features user authentication, message history, and a responsive design for seamless usage on various devices.",
-      "techStack": ["Express", "Node.js", "Next.js", "PostgreSQL", "Socket.io",  "Redis"],
-      "_id": "65b3d9c8d017f6b49c778ca7",
+      "description": "End-to-end financial RAG over SEC 10-K/10-Q using LangGraph, hybrid BM25 + pgvector retrieval, cross-encoder reranking, and context compression with citation-grounded answers. Multi-LLM routing (OpenAI/Groq/Gemini) with failover and Pydantic-validated tools for live metrics. Verification + bounded retries, Redis checkpointing, HITL approval, and RAGAS + LLM-as-a-Judge eval over 30 questions.",
+      "techStack": [
+        "Python",
+        "LangGraph",
+        "LangChain",
+        "Groq",
+        "PostgreSQL",
+        "pgvector",
+        "Redis",
+        "sentence-transformers",
+        "yfinance",
+        "Docker"
+      ],
+      "_id": "proj-finsight",
       "enabled": true
     },
     {
-      "liveurl": "https://personalplayer.netlify.app/",
-      "githuburl": "https://github.com/SachinMaurya01/VideoPlayer",
-      "title": "Video Player",
-      "sequence": 15,
+      "liveurl": "",
+      "githuburl": "https://github.com/SachinMaurya01/Fraud-detection-system",
+      "title": "Fraud Detection System",
+      "sequence": 2,
       "image": {
-        "public_id": "1706285468702-igx05q",
-        "url": "https://play-lh.googleusercontent.com/91XTD4MZmII60AsPb54fFBGxjFKJCRgxq461V39V3_pDxKUxKlQC-XLtRL1A8w56cBA=w526-h296-rw"
+        "public_id": "fraud",
+        "url": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80&auto=format&fit=crop"
       },
-      "description": " A video player application built with React and Redux. It allows users to play, and manage their video files. The application features a user-friendly interface, video controls, and support for various video formats.",
-      "techStack": ["Reactjs ", " HTML ", " CSS"],
-      "_id": "65b3d99dd017f6b49c778c86",
+      "description": "End-to-end credit-card fraud study on 284k ULB transactions (0.17% fraud). Compared logistic regression, shallow NN (73 params, best imbalanced F1 0.71), random forest, GBM and LinearSVC across imbalanced vs balanced regimes. RobustScaler + temporal splits, PR-focused evaluation, roadmap to LightGBM + calibration + FastAPI serving.",
+      "techStack": [
+        "Python",
+        "scikit-learn",
+        "TensorFlow",
+        "Keras",
+        "pandas",
+        "Jupyter"
+      ],
+      "_id": "proj-fraud",
       "enabled": true
     },
     {
-      "liveurl": "https://jewelrybysachin.netlify.app/",
-      "githuburl": "https://github.com/SachinMaurya01/JewelryResponsiveWebsite",
-      "title": "Jewellery Shop",
-      "sequence": 13,
+      "liveurl": "",
+      "githuburl": "https://github.com/SachinMaurya01/tasklattice",
+      "title": "TaskLattice - Multi-tenant Tasks Backend",
+      "sequence": 3,
       "image": {
-        "public_id": "1706285431821-3lfg2r",
-        "url": "https://5.imimg.com/data5/SELLER/Default/2022/3/BZ/QS/DT/14579595/on-line-fashion-jewelry-website-design.jpg"
+        "public_id": "tasklattice",
+        "url": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80&auto=format&fit=crop"
       },
-      "description": " A jewellery website built with React and Redux.  ",
-      "techStack": ["Reactjs ", " HTML ", " CSS"],
-      "_id": "65b3d978d017f6b49c778c67",
+      "description": "Multi-tenant task backend in Go: orgs \u2192 projects \u2192 tasks with RBAC (Owner/Admin/Member/Viewer), audit logs, transactional outbox + SQS workers + DLQ, Redis rate-limit/cache, idempotent writes, optimistic concurrency and cursor pagination. Gin + pgx + golang-migrate.",
+      "techStack": [
+        "Golang",
+        "Gin",
+        "PostgreSQL",
+        "Redis",
+        "AWS SQS",
+        "JWT",
+        "Docker"
+      ],
+      "_id": "proj-tasklattice",
+      "enabled": true
+    },
+    {
+      "liveurl": "",
+      "githuburl": "https://github.com/SachinMaurya01/ResearchAgent",
+      "title": "ResearchMind - Multi-Agent Research",
+      "sequence": 4,
+      "image": {
+        "public_id": "researchagent",
+        "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80&auto=format&fit=crop"
+      },
+      "description": "4-agent research pipeline (Search \u2192 Reader \u2192 Writer \u2192 Critic) on Groq llama-3.3-70b with Tavily search + BeautifulSoup scraping, structured Markdown reports and scored critiques. Streamlit UI with live progress + terminal mode via Rich.",
+      "techStack": [
+        "Python",
+        "LangChain",
+        "Groq",
+        "Tavily",
+        "Streamlit",
+        "BeautifulSoup"
+      ],
+      "_id": "proj-research",
+      "enabled": true
+    },
+    {
+      "liveurl": "",
+      "githuburl": "https://github.com/SachinMaurya01/alarum",
+      "title": "Alarum - CLI Alarm Clock",
+      "sequence": 5,
+      "image": {
+        "public_id": "alarum",
+        "url": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=800&q=80&auto=format&fit=crop"
+      },
+      "description": "Production-grade CLI alarm clock (Python, Typer + Rich). Natural time parsing, RRULE recurrence, wall-clock scheduler, foreground + daemon modes, atomic locked JSON state, audio \u2192 player \u2192 bell fallback, JSON scripting, doctor diagnostics, full pytest + CI matrix.",
+      "techStack": [
+        "Python",
+        "Typer",
+        "Rich",
+        "pytest",
+        "GitHub Actions"
+      ],
+      "_id": "proj-alarum",
       "enabled": true
     }
   ],
   "social_handles": [
     {
       "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/sachin-maurya-36333b1b3/",
+      "url": "https://www.linkedin.com/in/sachin-maurya-01/",
       "image": {
         "public_id": "1708718263294-2lfj67.webp",
         "url": ""
@@ -363,16 +681,6 @@
         "url": ""
       },
       "_id": "65b3e47cb48589dfcae185bd"
-    },
-    {
-      "enabled": true,
-      "platform": "Resume",
-      "url": "https://drive.google.com/file/d/1jx0EHW5tN0sTG667QEt08aJvxJoHZOXV/view?usp=drive_link",
-      "image": {
-        "public_id": "1708718328750-d4jsq.webp",
-        "url": ""
-      },
-      "_id": "65b3e47cb48589dfcae188bd"
     }
   ],
   "services": [

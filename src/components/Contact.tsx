@@ -42,24 +42,6 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
     e.preventDefault();
     setStatus("ERROR");
     setStatusText("Currently email is not available. Please reach out to me via social media like Linkedin or Email.");
-
-    // try {
-    //   console.log("Form data:", formData);
-    //   setTimeout(() => {
-    //     setStatus("DONE");
-    //     setFormData({
-    //       email: "",
-    //       message: "",
-    //       name: "",
-    //       subject: "",
-    //     });
-    //     setStatusText("Message sent successfully!");
-    //   }, 3000);
-    // } catch (error: any) {
-    //   setStatus("ERROR");
-    //   setStatusText("Error in sending message: " + error.message);
-    //   console.error("Error sending message:", error.message);
-    // }
   };
 
   useEffect(() => {
@@ -95,10 +77,15 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
           </motion.li>
         )}
       </AnimatePresence>
-      <span className="blob size-1/2 absolute top-20 right-0 blur-[100px] -z-10" />
-      <div className="p-4 md:p-8 md:px-16">
+      <motion.div
+        aria-hidden
+        className="blob absolute top-20 right-0 -z-10 size-1/2 blur-[100px]"
+        animate={{ opacity: [0.4, 0.8, 0.4], scale: [1, 1.1, 1] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <div className="mx-auto max-w-6xl p-4 md:p-8 md:px-6">
         <SectionHeading className="">
-          <SlideIn className="text-white/40">Interested in talking,</SlideIn>{" "}
+          <SlideIn className="text-foreground/40">Interested in talking,</SlideIn>{" "}
           <br /> <SlideIn>let’s do it.</SlideIn>
         </SectionHeading>
         <div className="grid md:grid-cols-2 gap-10 md:pt-16">
@@ -159,7 +146,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
                 <motion.button
                   whileHover="whileHover"
                   initial="initial"
-                  className="border border-white/30 px-8 py-2 rounded-3xl relative overflow-hidden"
+                  className="border border-foreground/30 px-8 py-2 rounded-3xl relative overflow-hidden"
                   type="submit"
                 >
                   <TextReveal className="uppercase">
@@ -172,7 +159,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
           <div className="md:justify-self-end flex flex-col">
             <div className="pb-4">
               <Transition>
-                <span className="text-white/90">Get in touch</span>
+                <span className="text-foreground/90">Get in touch</span>
               </Transition>
               <div className="text-2xl md:text-4xl font-bold py-2">
                 <Transition>
@@ -180,10 +167,10 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
                 </Transition>
               </div>
               <Transition>
-                <div className="pb-1 text-white/80">{about.phoneNumber}</div>
+                <div className="pb-1 text-foreground/80">{about.phoneNumber}</div>
               </Transition>
               <Transition>
-                <div className="text-white/80">{about.address}</div>
+                <div className="text-foreground/80">{about.address}</div>
               </Transition>
             </div>
 
@@ -212,7 +199,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
           <p>
             developed by @
             <Link
-              href={"https://www.linkedin.com/in/sachin-maurya-36333b1b3/"}
+              href={"https://www.linkedin.com/in/sachin-maurya-01/"}
               className="hover:underline"
             >
               Sachin Maurya

@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 
 import { About as IAbout, Timeline } from "../utils/interface";
 import { OpacityTextReveal, SlideIn, Transition } from "./ui/Transitions";
-import { formatDate } from "../utils";
 
 interface AboutProps {
   about: IAbout;
@@ -21,10 +20,18 @@ const About = ({ about, timeline }: AboutProps) => {
 
   return (
     <section
-      className="grid md:grid-cols-[1.8fr_1fr] gap-x-10 py-20 px-4 md:px-8 relative"
+      className="mx-auto grid max-w-6xl gap-x-10 px-4 py-16 md:grid-cols-[1.8fr_1fr] md:px-6 md:py-24"
       id="about"
     >
       <div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/5 px-3 py-1 text-xs uppercase tracking-[0.2em] text-foreground/60"
+        >
+          About · Experience · Education
+        </motion.div>
         <h3 className="md:text-5xl text-2xl font-bold overflow-hidden uppercase pb-8">
           <SlideIn>
             <OpacityTextReveal>{about.quote}</OpacityTextReveal>
@@ -52,16 +59,34 @@ const About = ({ about, timeline }: AboutProps) => {
         </div>
       </div>
       <div className="relative">
-        <div className="sticky top-6">
+        <div className="sticky top-24">
           <Transition>
-            <img
-              src={about.avatar.url}
-              width={400}
-              height={400}
-              alt={about.name}
-              className="rounded-full max-md:aspect-square object-cover"
-              style={{ }}
-            />
+            <div className="relative">
+              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/25 to-cyan-500/10 blur-xl" />
+              <img
+                src={about.avatar.url}
+                width={400}
+                height={400}
+                alt={about.name}
+                className="relative aspect-square w-full rounded-[2rem] border border-foreground/10 object-cover shadow-card"
+                style={{ }}
+              />
+            </div>
+          </Transition>
+          <Transition className="bento-card spotlight mt-4 p-4">
+            <p className="text-xs uppercase tracking-widest text-foreground/50">Experience</p>
+            <p className="font-display mt-1 text-lg font-bold text-foreground">{about.exp_year}+ years · Backend, Cloud & GenAI</p>
+            <p className="mt-1 text-sm text-foreground/60">{about.address} · {about.phoneNumber}</p>
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-3 rounded-xl border border-primary/25 bg-primary/10 p-3"
+            >
+              <p className="text-xs uppercase tracking-widest text-primary">Achievement</p>
+              <p className="mt-1 text-sm font-semibold text-foreground">Transformer of the Year (2024)</p>
+              <p className="text-xs text-foreground/60">DOT Compliance Group, backend automation and DevOps optimization</p>
+            </motion.div>
           </Transition>
         </div>
       </div>
@@ -84,7 +109,15 @@ const TimelineCard = ({
   setActiveIndex,
   index,
 }: TimelineCardProps) => (
-  <section id="about" className="border-b border-primary/20 py-4">
+  <motion.section
+    id="about"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: "-40px" }}
+    transition={{ duration: 0.45, delay: index * 0.05 }}
+    whileHover={{ y: -3 }}
+    className="bento-card spotlight mb-3 p-5"
+  >
     <div
       className="flex items-center justify-between gap-4 cursor-pointer select-none"
       onClick={() => setActiveIndex(index)}
@@ -105,12 +138,12 @@ const TimelineCard = ({
       </div>
     </div>
     <motion.div
-      initial={{
-        height: activeIndex === index ? "100%" : 0,
-      }}
+      initial={false}
       animate={{
-        height: activeIndex === index ? "100%" : 0,
+        height: activeIndex === index ? "auto" : 0,
+        opacity: activeIndex === index ? 1 : 0,
       }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
       className="overflow-hidden"
     >
       <p className="text-foreground/60 py-4 max-md:text-sm">
@@ -124,9 +157,6 @@ const TimelineCard = ({
         <div className="max-md:text-xs">
           <span className="italic">
             {timeline.startDate}
-            {/* {formatDate(timeline.startDate).month +
-              ", " +
-              formatDate(timeline.startDate).year} */}
           </span>
           {" - "}
           <span className="italic">
@@ -142,5 +172,5 @@ const TimelineCard = ({
         ))}
       </ul>
     </motion.div>
-  </section>
+  </motion.section>
 );

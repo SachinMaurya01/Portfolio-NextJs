@@ -12,7 +12,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         type={type}
         {...props}
         className={cn(
-          "focus:outline-none bg-transparent p-2 border border-border rounded-lg focus-visible:border-white w-full",
+          "focus:outline-none bg-transparent p-2 border border-border rounded-lg focus-visible:border-primary w-full",
           className
         )}
       />
@@ -31,7 +31,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
         ref={ref}
         {...props}
         className={cn(
-          "focus:outline-none bg-transparent p-2 border border-border rounded-lg focus-visible:border-white w-full",
+          "focus:outline-none bg-transparent p-2 border border-border rounded-lg focus-visible:border-primary w-full",
           className
         )}
       />

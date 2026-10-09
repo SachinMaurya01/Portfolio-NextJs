@@ -1,228 +1,129 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import { motion } from "motion/react";
 
 import { SocialHandle } from "../utils/interface";
-import { TextReveal } from "./ui/Typography";
-import { useMediaQuery } from "../utils/useMediaQuery";
-import Link from "next/link";
-import { ArrowUpRight } from "./ui/Icons";
-import { Transition } from "./ui/Transitions";
+import { cn } from "../utils/cn";
+import ThemeToggle from "./ThemeToggle";
 
 interface HeaderProps {
   social: SocialHandle[];
 }
+
+const navLinks = [
+  { title: "About", href: "#about" },
+  { title: "Skills", href: "#skills" },
+  { title: "Projects", href: "#projects" },
+  { title: "Contact", href: "#contact" },
+];
+
 const Header = ({ social }: HeaderProps) => {
-  const [isActive, setIsActive] = useState(false);
-  const isMobile = useMediaQuery("(max-width:768px)");
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const MotionLink = motion.create(Link);
-
-  const variants = {
-    open: {
-      clipPath: `inset(0% 0% 0% 0% round ${isMobile ? 0 : "24px"})`,
-      transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
-    },
-    closed: {
-      clipPath: `inset(5% 12% 93% 85% round ${isMobile ? 0 : "24px"})`,
-      transition: {
-        duration: 0.75,
-        delay: 0.35,
-        type: "tween",
-        ease: [0.76, 0, 0.24, 1],
-      },
-    },
-  };
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <motion.header className="fixed top-0 md:mt-12 md:mr-12 right-0 z-20">
-      <Transition className="fixed md:top-8 top-6 md:left-8 left-6 z-30 ">
-        <Link href={"/"}>
-          <TextReveal className="font-semibold ">ThePortfolio</TextReveal>
-        </Link>
-      </Transition>
-      <motion.div
-        initial={false}
-        animate={isActive ? "open" : "closed"}
-        variants={variants}
-        className="absolute top-0 right-0 md:-top-6 md:-right-6 w-dvw md:w-[480px] h-dvh md:h-[calc(100dvh_-_2.5rem)] bg-primary"
-      >
-        {isActive && (
-          <nav className="flex justify-between flex-col w-full h-full px-10 pt-[100px] pb-[50px]">
-            <div className="flex gap-2 flex-col">
-              {navLinks.map((link, i) => {
-                const { title, href } = link;
-                return (
-                  <div
-                    key={`b_${i}`}
-                    className=""
-                    onClick={() => setIsActive(false)}
-                  >
-                    <Link
-                      href={href}
-                      className="flex flex-wrap overflow-hidden"
-                    >
-                      <motion.div
-                        variants={perspective}
-                        custom={i}
-                        initial="initial"
-                        animate="enter"
-                        whileHover="whileHover"
-                        whileTap="whileHover"
-                        exit="exit"
-                        className="text-5xl text-background flex items-center justify-between"
-                      >
-                        <motion.span
-                          variants={{
-                            initial: { x: -20 },
-                            whileHover: { x: 0 },
-                          }}
-                        >
-                          <ArrowUpRight />
-                        </motion.span>
-                        <motion.span
-                          variants={{
-                            initial: { x: 0 },
-                            whileHover: { x: 20 },
-                          }}
-                        >
-                          {title}
-                        </motion.span>
-                      </motion.div>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-            <motion.div className="flex flex-wrap">
-              {social.map((link, i) => {
-                const { platform, _id, url } = link;
-                return (
-                  <MotionLink
-                    href={url}
-                    target="_blank"
-                    className=" w-1/2 mt-1 text-background"
-                    variants={slideIn}
-                    custom={i}
-                    initial="initial"
-                    animate="enter"
-                    exit="exit"
-                    key={_id}
-                  >
-                    <TextReveal>{platform}</TextReveal>
-                  </MotionLink>
-                );
-              })}
-            </motion.div>
+    <motion.header
+      initial={{ y: -32, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="fixed top-0 inset-x-0 z-40"
+    >
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
+        <div
+          className={cn(
+            "glass mt-3 flex items-center justify-between rounded-2xl border px-4 py-2.5 transition-all duration-300",
+            scrolled
+              ? "border-primary/25 shadow-glow"
+              : "border-foreground/10 shadow-card"
+          )}
+        >
+          <Link href="/" className="font-display text-sm font-bold tracking-tight">
+            <span className="text-gradient">Sachin Maurya</span>
+            <span className="ml-2 hidden rounded-full border border-primary/30 bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary sm:inline">
+              Backend · Cloud · GenAI
+            </span>
+          </Link>
+
+          <nav className="hidden items-center gap-1 md:flex">
+            {navLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="rounded-full px-3.5 py-1.5 text-sm text-foreground/70 transition hover:bg-foreground/5 hover:text-foreground"
+              >
+                {l.title}
+              </Link>
+            ))}
+            <Link
+              href="#contact"
+              className="ml-2 rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground shadow-glow transition hover:brightness-110"
+            >
+              Let&apos;s talk
+            </Link>
+            <span className="ml-2">
+              <ThemeToggle />
+            </span>
           </nav>
+
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <button
+              onClick={() => setOpen(!open)}
+              aria-label="Toggle menu"
+              className="grid size-9 place-items-center rounded-full border border-foreground/10 text-foreground md:hidden"
+            >
+              {open ? "✕" : "☰"}
+            </button>
+          </div>
+        </div>
+
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25 }}
+            className="glass mt-2 rounded-2xl border border-foreground/10 p-3 md:hidden"
+          >
+            {navLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className={cn(
+                  "block rounded-xl px-4 py-2.5 text-[15px] text-foreground/80 hover:bg-foreground/5"
+                )}
+              >
+                {l.title}
+              </Link>
+            ))}
+            <div className="mt-2 flex flex-wrap gap-2 border-t border-foreground/10 pt-3">
+              {social
+                .filter((s) => s.enabled)
+                .map((s) => (
+                  <Link
+                    key={s._id}
+                    href={s.url}
+                    target="_blank"
+                    className="rounded-full border border-foreground/10 px-3 py-1.5 text-xs text-foreground/70"
+                  >
+                    {s.platform}
+                  </Link>
+                ))}
+            </div>
+          </motion.div>
         )}
-      </motion.div>
-      <Button
-        isActive={isActive}
-        toggleMenu={() => {
-          setIsActive(!isActive);
-        }}
-      />
+      </div>
     </motion.header>
   );
 };
 
 export default Header;
-
-function Button({
-  isActive,
-  toggleMenu,
-}: {
-  isActive: boolean;
-  toggleMenu: () => void;
-}) {
-  return (
-    <div className="absolute md:top-0 top-4 right-4 md:right-0 w-[100px] h-10 rounded-full overflow-hidden cursor-pointer">
-      <motion.div
-        className="relative w-full h-full"
-        animate={{ top: isActive ? "-100%" : "0%" }}
-        transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}
-      >
-        <motion.div
-          className="bg-primary h-full w-full grid place-items-center text-black"
-          onClick={() => {
-            toggleMenu();
-          }}
-        >
-          <TextReveal>Menu</TextReveal>
-        </motion.div>
-        <motion.div
-          className="bg-black h-full w-full grid place-items-center"
-          onClick={() => {
-            toggleMenu();
-          }}
-        >
-          <TextReveal>Close</TextReveal>
-        </motion.div>
-      </motion.div>
-    </div>
-  );
-}
-
-const navLinks = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "About",
-    href: "#about",
-  },
-  // {
-  //   title: "Services",
-  //   href: "#services",
-  // },
-  {
-    title: "Projects",
-    href: "#projects",
-  },
-  {
-    title: "Contact",
-    href: "#contact",
-  },
-];
-
-const perspective = {
-  initial: {
-    y: 50,
-  },
-  enter: (i: number) => ({
-    y: 0,
-    transition: {
-      duration: 0.65,
-      delay: 0.5 + i * 0.1,
-      ease: [0.215, 0.61, 0.355, 1],
-      opacity: { duration: 0.35 },
-    },
-  }),
-  exit: {
-    opacity: 0,
-    transition: { duration: 0.5, type: "tween", ease: "easeInOut" },
-  },
-};
-
-const slideIn = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  enter: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: 0.75 + i * 0.1,
-      ease: [0.215, 0.61, 0.355, 1],
-    },
-  }),
-  exit: {
-    opacity: 0,
-    transition: { duration: 0.5, type: "tween", ease: "easeInOut" },
-  },
-};
