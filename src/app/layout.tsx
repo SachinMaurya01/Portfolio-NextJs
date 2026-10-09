@@ -32,7 +32,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${grotesk.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${grotesk.variable} font-sans antialiased`}
+        suppressHydrationWarning
+      >
         <VariantProvider>
           <CustomCursor />
           {children}
