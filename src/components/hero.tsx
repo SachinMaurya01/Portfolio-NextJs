@@ -97,7 +97,7 @@ const Hero = ({ about }: HeroProps) => {
                 GitHub ↗
               </Link>
               <Link
-                href="https://www.linkedin.com/in/sachin-maurya-01/"
+                href="https://www.linkedin.com/in/sachin-maurya01/"
                 target="_blank"
                 className="rounded-full px-2 py-3 text-sm text-foreground/60 underline-offset-4 transition hover:text-foreground hover:underline"
               >
